@@ -61,15 +61,15 @@ auth_channels     = environ.get("AUTH_CHANNELS", "0")# Channels for force sub (m
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', 'https://files.catbox.moe/kk1h5n.jpg')    # QR code image for payments
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'ɴᴏ ᴀᴠᴀɪʟᴀʙʟᴇ ʀɪɢʜᴛ ɴᴏᴡ')    # Owner UPI ID for payments
+QR_CODE = environ.get('QR_CODE', 'https://i.ibb.co/Dfk6cf0Q/x.jpg')    # QR code image for payments
+OWNER_UPI_ID = environ.get('delhisehoon11784@ptyes', 'ɴᴏ ᴀᴠᴀɪʟᴀʙʟᴇ ʀɪɢʜᴛ ɴᴏᴡ')    # Owner UPI ID for payments
 
 STAR_PREMIUM_PLANS = {
-    10: "7day",
-    20: "15day",    
+    50: "15day",
+    70: "30day",    
     40: "1month", 
-    55: "45day",
-    75: "60day",
+   110: "45day",
+   140: "60day",
 }  # Premium plans with their respective durations in days
 
 # ============================
