@@ -116,8 +116,8 @@ SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "https://vplink.in") # Sh
 SHORTENER_API3 = environ.get("SHORTENER_API3", "43c280c2867f5957c6986017c5943e900c43f48d")  
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "https://vplink.in") # Shortener website for third website
 
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "1200")) # Time gap for two-step verification in seconds (default: 20 minutes)
-THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))    
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "10800")) # Time gap for two-step verification in seconds (default: 20 minutes)
+THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "10800"))    
 
 # ============================
 # Channel & Group Links Configuration
