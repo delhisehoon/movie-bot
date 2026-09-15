@@ -16,7 +16,6 @@ from database.users_chats_db import db
 from bs4 import BeautifulSoup
 import aiohttp
 from shortzy import Shortzy
-from plugins.Dreamxfutures.Imdbposter import get_movie_detailsx
 
 
 logger = logging.getLogger(__name__)
@@ -438,6 +437,9 @@ async def get_posterx(query, bulk=False, id=False, file=None):
     Fetches movie details from TMDB using the get_movie_detailsx helper
     and formats the output to be compatible with the original get_poster function.
     """
+    # Import lazily to avoid a circular import during database.ia_filterdb initialization.
+    from plugins.Dreamxfutures.Imdbposter import get_movie_detailsx
+
     if not id:
         # The get_movie_detailsx function handles searching by query string.
         details = await get_movie_detailsx(query, file=file)
