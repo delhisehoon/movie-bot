@@ -9,7 +9,7 @@ from imdb import Cinemagoer
 
 
 logger = logging.getLogger(__name__)
-ia = Cinemagoer()
+ia = None
 LONG_IMDB_DESCRIPTION = False
 
 def list_to_str(lst):
@@ -56,7 +56,10 @@ async def fetch_image(url, size=(860, 1200)):
 
 
 async def get_movie_details(query, id=False, file=None):
+    global ia
     try:
+        if ia is None:
+            ia = Cinemagoer()
         if not id:
             query = query.strip().lower()
             title = query
