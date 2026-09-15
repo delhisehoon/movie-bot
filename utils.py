@@ -23,7 +23,7 @@ BTN_URL_REGEX = re.compile(
 )
 
 
-imdb = Cinemagoer() 
+sqlite:///cinemagoer.db
 BANNED = {}
 SMART_OPEN = '“'
 SMART_CLOSE = '”'
